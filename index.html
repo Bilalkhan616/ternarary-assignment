@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ternarary Operator</title>
+</head>
+
+<body>
+
+    <div id="main">
+        <h1>Highest number</h1>
+        number 1
+        <input type='text' id='num1' />
+        <br>
+        number 2
+        <input type='text' id='num2' />
+        <br>
+        number 3
+        <input type='text' id='num3' />
+        <br>
+        <button onclick="mainFunc()">Result</button>
+    </div>
+
+    <script>
+
+        const mainFunc = () => {
+
+            let n1 = document.getElementById('num1').value;
+            let n2 = document.getElementById('num2').value;
+            let n3 = document.getElementById('num3').value;
+
+            let max = (n1 > n2) ? (n1 > n3 ? n1 : n3) : (n2 > n3 ? n2 : n3);
+
+            console.log('the max number is : ' + max)
+        }
+
+    </script>
+
+</body>
+
+</html>
